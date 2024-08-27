@@ -42,7 +42,7 @@ ZMK_HOLD_TAP(hmr,
 // tap: copy | double-tap: cut
 ZMK_TAP_DANCE(copy_cut, tap_dance,
     tapping-term-ms = <200>;
-    bindings = <&kp LC(INS)>, <&kp LC(X)>;
+    bindings = <&kp LC(C)>, <&kp LC(X)>;
 )
 
 // tap: backspace | shift + tap: delete | hold: num layer
