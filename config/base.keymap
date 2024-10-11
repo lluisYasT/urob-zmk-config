@@ -175,8 +175,13 @@ ZMK_MOD_MORPH(bs_del, bindings = <&kp BSPC>, <&kp DEL>;
               mods = <(MOD_LSFT|MOD_RSFT)>; keep-mods = <MOD_RSFT>;)
 
 // Tap: copy | double-tap: cut.
-ZMK_TAP_DANCE(copy_cut, bindings = <&kp LC(INS)>, <&kp LC(X)>;
+ZMK_TAP_DANCE(copy_cut, bindings = <&kp LC(C)>, <&kp LC(X)>;
               tapping-term-ms = <200>;)
+// tap: ' | shft + tap: _
+ZMK_MOD_MORPH(sqt_under,
+    bindings = <&kp SQT>, <&kp UNDERSCORE>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
 
 // Sticky shift + leader.
 ZMK_MACRO(leader_sft, bindings = <&sk LSHFT &leader>;)
@@ -199,15 +204,16 @@ ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
       ZMK_LAYER(name, LT RT LM RM LB RB LH RH)
 #endif
 
-ZMK_BASE_LAYER(Base,
+/* Graphite Layout https://github.com/rdavison/graphite-layout */
+ZMK_LAYER(base,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp Q         &kp W         &kp F         &kp P         &kp B       ,   &kp J         &kp L         &kp U         &kp Y         &kp SQT     ,
+    &kp B         &kp L         &kp D         &kp D         &kp W           &sqt_under    &kp F         &kp O         &kp U         &kp J
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hml LGUI A   &hml LALT R   &hml LSHFT S  &hml LCTRL T  &kp G       ,   &kp M         &hmr LCTRL N  &hmr RSHFT E  &hmr LALT I   &hmr LGUI O ,
+    &hml LGUI B   &hml LALT L   &hml LSHFT D  &hml LCTRL W  &kp Z           &kp Y         &hmr LCTRL H  &hmr RSHFT A  &hmr LALT E   &hmr LGUI I
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp Z         &kp X         &kp C         &kp D         &kp V       ,   &kp K         &kp H         &comma_morph  &dot_morph    &qexcl      ,
+    &kp Q         &kp X         &kp M         &kp C         &kp V           &kp K         &kp P         &dot_morph    &comma_morph  &kp SLASH
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                              &lt_spc NAV 0 &lt FN RET  ,   SMART_NUM     MAGIC_SHIFT
+                                              &lt_spc NAV 0 &lt FN RET      SMART_NUM     &smart_shft
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
