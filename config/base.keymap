@@ -245,9 +245,9 @@ ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS)  // FN + NUM --> SYS
 /* Graphite Layout https://github.com/rdavison/graphite-layout */
 ZMK_LAYER(base,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-    X_LT     &kp B         &kp L         &kp D         &kp D         &kp W           X_MT     &sqt_under    &kp F         &kp O         &kp U         &kp J           X_RT
+    X_LT     &kp B         &kp L         &kp D         &kp W         &kp Z           X_MT     &sqt_under    &kp F         &kp O         &kp U         &kp J           X_RT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LM     &hml LGUI B   &hml LALT L   &hml LSHFT D  &hml LCTRL W  &kp Z           X_MM     &kp Y         &hmr LCTRL H  &hmr RSHFT A  &hmr LALT E   &hmr LGUI I     X_RM
+    X_LM     &hml LGUI N   &hml LALT R   &hml LSHFT T  &hml LCTRL S  &kp G           X_MM     &kp Y         &hmr LCTRL H  &hmr RSHFT A  &hmr LALT E   &hmr LGUI I     X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LB     &kp Q         &kp X         &kp M         &kp C         &kp V           X_MB     &kp K         &kp P         &kp DOT       &minusdqt     &slshless       X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
