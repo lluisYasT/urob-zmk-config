@@ -222,7 +222,7 @@ ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
 /* Graphite Layout https://github.com/rdavison/graphite-layout */
 ZMK_LAYER(base,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp B         &kp L         &kp D         &kp D         &kp W           &sqt_under    &kp F         &kp O         &kp U         &kp J
+    &kp B         &kp L         &kp D         &kp D         &kp W           &kp SQT       &kp F         &kp O         &kp U         &kp J
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &hml LGUI N   &hml LALT R   &hml LSHFT T  &hml LCTRL S  &kp G           &kp Y         &hmr LCTRL H  &hmr RSHFT A  &hmr LALT E   &hmr LGUI I
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
